@@ -2,7 +2,7 @@ import u_tools.*;
 
 public class InsertionSort
 {
-	public static void main( String[] args )
+	public void main( String[] args )
 	{
 		int[] aTrier = new int[] {10,2,8,6,7,3};
 		
@@ -12,7 +12,7 @@ public class InsertionSort
 		insertionSort( aTrier , AP );
 	}
 	
-	public static void insertionSort( int[] aTrier, u_tools.ArrayPrinter AP )
+	public void insertionSort( int[] aTrier, u_tools.ArrayPrinter AP )
 	{
 		for ( int i = 1 ; i < aTrier.length ; i++ )
 		{

@@ -2,7 +2,7 @@ import u_tools.*;
 
 public class BubbleSort
 {
-	public static void main( String[] args )
+	public void main( String[] args )
 	{
 		
 		int[] aTrier = new int[] {12,8,7,5,2};
@@ -15,7 +15,7 @@ public class BubbleSort
 		
 	}
 	
-	public static void bubbleSortArray( int[] aTrier, u_tools.ArrayPrinter AP )
+	public void bubbleSortArray( int[] aTrier, u_tools.ArrayPrinter AP )
 	{
 		
 		// Worst case approach : we have to go through the array Length - 1 times

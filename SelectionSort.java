@@ -2,7 +2,7 @@ import u_tools.*;
 
 public class SelectionSort
 {
-	public static void main( String[] args )
+	public void main( String[] args )
 	{
 		int[] aTrier = new int[] {10,2,8,6,7,3};
 		
@@ -12,7 +12,7 @@ public class SelectionSort
 		selectionSort( aTrier , AP );
 	}
 	
-	public static void selectionSort( int[] aTrier, u_tools.ArrayPrinter AP )
+	public void selectionSort( int[] aTrier, u_tools.ArrayPrinter AP )
 	{
 		for (int i = 0 ; i < aTrier.length - 1 ; i++ )
 		{
