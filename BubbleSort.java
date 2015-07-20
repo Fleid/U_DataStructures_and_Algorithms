@@ -1,3 +1,5 @@
+import u_tools.*;
+
 public class BubbleSort
 {
 	public static void main( String[] args )
@@ -6,23 +8,17 @@ public class BubbleSort
 		int[] aTrier = new int[] {12,8,7,5,2};
 		aTrier[0] = 12; // Pour info
 		
+		u_tools.ArrayPrinter AP = new u_tools.ArrayPrinter();
 		
-		printArray( aTrier );
+		AP.pr( aTrier );
 		bubbleSortArray( aTrier );
-		printArray( aTrier );
-	}
-	
-	public static void printArray( int[] aPrinter )
-	{
-		for ( int i=0 ; i < aPrinter.length ; i++)
-			{
-				System.out.print( aPrinter[i] + " " );
-			}
-		System.out.println();
+		
 	}
 	
 	public static void bubbleSortArray( int[] aTrier )
 	{
+		u_tools.ArrayPrinter AP = new u_tools.ArrayPrinter();
+		
 		// Worst case approach : we have to go through the array Length - 1 times
 		for ( int i=0 ; i < aTrier.length - 1 ; i++)
 			{	
@@ -37,7 +33,7 @@ public class BubbleSort
 							aTrier[j] = tmp;  
 						}
 					}
-				printArray( aTrier );
+			AP.pr( aTrier );
 			}
 		
 	}
