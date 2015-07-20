@@ -23,8 +23,10 @@ public class BubbleSort
 	
 	public static void bubbleSortArray( int[] aTrier )
 	{
+		// Worst case approach : we have to go through the array Length - 1 times
 		for ( int i=0 ; i < aTrier.length - 1 ; i++)
 			{	
+				// This loop does the actual comparison, starting from the first element
 				for ( int j=0 ; j < aTrier.length - 1 - i ; j++ )
 					{
 						//System.out.println( aTrier[j] + " vs " + aTrier[j+1] );
