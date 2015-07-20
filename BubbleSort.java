@@ -11,13 +11,12 @@ public class BubbleSort
 		u_tools.ArrayPrinter AP = new u_tools.ArrayPrinter();
 		
 		AP.pr( aTrier );
-		bubbleSortArray( aTrier );
+		bubbleSortArray( aTrier , AP );
 		
 	}
 	
-	public static void bubbleSortArray( int[] aTrier )
+	public static void bubbleSortArray( int[] aTrier, u_tools.ArrayPrinter AP )
 	{
-		u_tools.ArrayPrinter AP = new u_tools.ArrayPrinter();
 		
 		// Worst case approach : we have to go through the array Length - 1 times
 		for ( int i=0 ; i < aTrier.length - 1 ; i++)
