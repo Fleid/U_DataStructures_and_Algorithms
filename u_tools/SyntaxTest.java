@@ -2,11 +2,16 @@ package u_tools;
 
 public class SyntaxTest
 {
-	private int A;
+	public int A;
 	
-	public void SyntaxTest( int A )
+	public SyntaxTest( int A )
 	{
 		this.A = A;
+	}
+
+	public SyntaxTest()
+	{
+		this(1);
 	}
 	
 	public void showMe()

@@ -6,8 +6,7 @@ public class TestSyntaxTest
 	{
 		int A = 12;
 		
-		u_tools.SyntaxTest ST = new u_tools.SyntaxTest();
-		ST.SyntaxTest(A);
+		SyntaxTest ST = new SyntaxTest(10);
 		ST.showMe();
 
 	}
