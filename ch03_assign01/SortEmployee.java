@@ -2,7 +2,7 @@
 Write the insertion sort algorithm, which takes an array of employee and sorts them 
 in order of their employee number.*/
 
-package ch03_assign;
+package ch03_assign01;
 
 public class SortEmployee
 {

@@ -1,4 +1,4 @@
-package ch03_assign;
+package ch03_assign01;
 
 public class TestEmployee
 {

@@ -1,7 +1,7 @@
 /*
 Write a class Employee, which represents an employee in a company. The employee has a employeeNumber (9 digit number), firstName, lastName and emailId as member variables. 
 */
-package ch03_assign;
+package ch03_assign01;
 
 
 public class Employee
