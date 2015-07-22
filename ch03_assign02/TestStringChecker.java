@@ -8,7 +8,7 @@ public class TestStringChecker
 		
 		StringChecker SC = new StringChecker();
 		
-		System.out.println(aTester + " donne : " + SC.CheckString(aTester) );
+		System.out.println(aTester + " gives : " + SC.CheckString(aTester) );
 		
 	}
 }
