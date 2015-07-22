@@ -4,14 +4,16 @@ public class TestLinkedList
 {
 	public static void main( String[] args )
 	{
+		//The use of generics is prohibited with primitive types
+		//But we can use autoboxing : Integer instead of int...
 		LinkedList<Integer> LL = new LinkedList<Integer>();
 		
 		LL.insertAtHead(5);
 		LL.insertAtHead(10);
-		/*LL.insertAtHead(2);
+		LL.insertAtHead(2);
 		LL.insertAtHead(12);
 		LL.insertAtHead(19);
-		LL.insertAtHead(20);*/
+		LL.insertAtHead(20);
 		
 		LL.deleteFromHead();
 		
