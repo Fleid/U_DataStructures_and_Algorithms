@@ -15,6 +15,19 @@ public class LinkedList
 	{
 		this.headNode = this.headNode.getNextNode();
 	}
+	
+	public Node find(int data)
+	{
+		Node current = this.headNode;
+		
+		while (current != null)
+		{
+			if (current.getData() == data) return current;
+			current = current.getNextNode();
+		}
+		
+		return null;			
+	}
 
 	public int length()
 	{
@@ -29,7 +42,6 @@ public class LinkedList
 		}
 		
 		return length;		
-		
 	}
 	
 	@Override

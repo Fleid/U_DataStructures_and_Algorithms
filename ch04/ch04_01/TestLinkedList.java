@@ -18,5 +18,8 @@ public class TestLinkedList
 		// Le call de ToString est implicite
 		System.out.println(LL);
 		System.out.println("Length : " + LL.length());
+		
+		System.out.println("Find 12 ? : " + LL.find(12));
+		System.out.println("Find 77 ? : " + LL.find(77));
 	}
 }
