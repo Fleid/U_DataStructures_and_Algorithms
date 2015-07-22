@@ -1,12 +1,12 @@
 package ch04_01;
 
-public class LinkedList<T>
+public class LinkedList
 {
-	private Node<T> headNode;
+	private Node headNode;
 	
-	public void insertAtHead( T data )
+	public void insertAtHead( int data )
 	{
-		Node<T> newHead = new Node<T>( data );
+		Node newHead = new Node( data );
 		newHead.setNextNode(this.headNode);
 		this.headNode = newHead;
 	}
@@ -16,9 +16,9 @@ public class LinkedList<T>
 		this.headNode = this.headNode.getNextNode();
 	}
 	
-	public Node<T> find(T data)
+	public Node find(int data)
 	{
-		Node<T> current = this.headNode;
+		Node current = this.headNode;
 		
 		while (current != null)
 		{
@@ -33,7 +33,7 @@ public class LinkedList<T>
 	{
 		int length = 0;
 		
-		Node<T> current = this.headNode;
+		Node current = this.headNode;
 		
 		while (current != null)
 		{
@@ -49,7 +49,7 @@ public class LinkedList<T>
 	{
 		String result = "{";
 		
-		Node<T> current = this.headNode;
+		Node current = this.headNode;
 		
 		while (current != null)
 		{

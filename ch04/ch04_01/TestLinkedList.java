@@ -4,9 +4,7 @@ public class TestLinkedList
 {
 	public static void main( String[] args )
 	{
-		//The use of generics is prohibited with primitive types
-		//But we can use autoboxing : Integer instead of int...
-		LinkedList<Integer> LL = new LinkedList<Integer>();
+		LinkedList LL = new LinkedList();
 		
 		LL.insertAtHead(5);
 		LL.insertAtHead(10);
@@ -22,6 +20,6 @@ public class TestLinkedList
 		System.out.println("Length : " + LL.length());
 		
 		System.out.println("Find 12 ? : " + LL.find(12));
-		//System.out.println("Find 77 ? : " + LL.find(77));
+		System.out.println("Find 77 ? : " + LL.find(77));
 	}
 }
