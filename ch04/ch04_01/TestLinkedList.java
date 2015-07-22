@@ -13,8 +13,10 @@ public class TestLinkedList
 		LL.insertAtHead(19);
 		LL.insertAtHead(20);
 		
+		LL.deleteFromHead();
+		
 		// Le call de ToString est implicite
 		System.out.println(LL);
-		System.out.println(LL.length());
+		System.out.println("Length : " + LL.length());
 	}
 }

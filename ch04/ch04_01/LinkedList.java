@@ -10,7 +10,12 @@ public class LinkedList
 		newHead.setNextNode(this.headNode);
 		this.headNode = newHead;
 	}
-	
+
+	public void deleteFromHead()
+	{
+		this.headNode = this.headNode.getNextNode();
+	}
+
 	public int length()
 	{
 		int length = 0;
@@ -26,7 +31,6 @@ public class LinkedList
 		return length;		
 		
 	}
-	
 	
 	@Override
 	public String toString()
