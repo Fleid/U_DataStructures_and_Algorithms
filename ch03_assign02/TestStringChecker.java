@@ -1,3 +1,8 @@
+/*
+If we pass "anaconda" the method should return true (repeated char 'a'). 
+If we pass 'great', the method should return false, because there are no duplicate characters in the string. 
+*/
+
 package ch03_assign02;
 
 public class TestStringChecker

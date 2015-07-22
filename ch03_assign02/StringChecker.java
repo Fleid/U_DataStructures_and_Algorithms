@@ -1,10 +1,12 @@
 /*
 Write an algorithm which checks if there are duplicate characters in a string. 
 The method signature would look something like public boolean hasDuplicateChars(String s) . 
+*/
 
-If we pass "anaconda" the method should return true (repeated char 'a'). 
-If we pass 'great', the method should return false, because there are no duplicate characters in the string. 
+/*
 What is the time complexity of this algorithm? If we know that the string contains ONLY ASCII characters, can we improve the algorithm?
+- Time Complexity : O(n2) for the double loop on the string in the SortString
+- Using Regular Expression?
 */
 
 package ch03_assign02;
