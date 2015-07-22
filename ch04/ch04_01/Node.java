@@ -1,31 +1,31 @@
 package ch04_01;
 
-public class Node
+public class Node<T>
 {
-	private int data;
-	private Node nextNode;
+	private T data;
+	private Node<T> nextNode;
 	
-	public Node(int data)
+	public Node(T data)
 	{
 		this.data = data;
 	}
 	
-	public int getData()
+	public T getData()
 	{
 		return this.data;
 	}
 	
-	public Node getNextNode()
+	public Node<T> getNextNode()
 	{
 		return this.nextNode;
 	}
 	
-	public void setdData(int data)
+	public void setdData(T data)
 	{
 		this.data = data;
 	}
 	
-	public void setNextNode(Node nextNode)
+	public void setNextNode(Node<T> nextNode)
 	{
 		this.nextNode = nextNode;
 	}
