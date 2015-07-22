@@ -11,6 +11,23 @@ public class LinkedList
 		this.headNode = newHead;
 	}
 	
+	public int length()
+	{
+		int length = 0;
+		
+		Node current = this.headNode;
+		
+		while (current != null)
+		{
+			length++;
+			current = current.getNextNode();
+		}
+		
+		return length;		
+		
+	}
+	
+	
 	@Override
 	public String toString()
 	{
@@ -20,7 +37,7 @@ public class LinkedList
 		
 		while (current != null)
 		{
-			result += current.toString() + ",";
+			result += current.toString() + ", ";
 			current = current.getNextNode();
 		}
 		
