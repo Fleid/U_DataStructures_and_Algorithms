@@ -1,5 +1,7 @@
 package ch04_01;
 
+import java.util.*; //assign 4
+
 public class LinkedList
 {
 	private Node headNode;
@@ -84,6 +86,38 @@ public class LinkedList
 		}
 		
 		return	current.getData();
+	}
+
+	//assignment 4 
+	/* Write an algorithm to remove duplicates from an unsorted linked list.  
+	(You can use the Set provided in the JDK) : http://tutorials.jenkov.com/java-collections/set.html#java-set-example
+	Time Complexity? O(n)
+	How will you solve it if additional memory is not allowed? > Sort + nettoyage sur place en 1 loop
+	*/
+	public void removeDuplicates()
+	{
+		LinkedList tempList = new LinkedList();
+		Node current = this.headNode;
+		// Les Set ne gardent pas les doublons	
+		Set<Integer> E = new LinkedHashSet<Integer>(); // guarantees order on enumeration
+		
+		// On remplit le Set
+		while (current != null)
+		{
+			E.add(current.getData());
+			current = current.getNextNode();
+		}
+		
+		// On remplit la nouvelle liste (le résultat est dans le désordre)
+		Iterator iterator = E.iterator();
+		while( iterator.hasNext() )
+		{
+						   //cast to int
+			int element = (int)iterator.next();
+			tempList.insertAtHead( element );
+		}		
+		
+		this.headNode = tempList.headNode;
 	}
 
 	public int length()
