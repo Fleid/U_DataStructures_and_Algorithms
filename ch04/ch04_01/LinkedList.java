@@ -54,9 +54,22 @@ public class LinkedList
 		for (int i = 0 ; i < ln - 1 ; i++ ) {
 			current = current.getNextNode();
 		}
-		current.setNextNode(null);
+		current.setNextNode(null);		
+	}
+	
+	//assignment 2
+	public void reverse()
+	{
+		LinkedList tempList = new LinkedList();
+		Node current = this.headNode;	
 		
-				
+		while (current != null)
+		{
+			tempList.insertAtHead(current.getData());
+			current = current.getNextNode();
+		}
+		
+		this.headNode = tempList.headNode;
 	}
 
 	public int length()

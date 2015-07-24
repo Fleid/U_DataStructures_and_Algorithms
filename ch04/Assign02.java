@@ -1,6 +1,6 @@
 import ch04_01.*;
 
-public class Assign01
+public class Assign02
 {
 	public static void main( String[] args )
 	{
@@ -17,7 +17,7 @@ public class Assign01
 		System.out.println("Length : " + LL.length());
 		
 		// assignment 1
-		LL.moveLastToHead(3);
+		LL.reverse();
 		System.out.println(LL);
 		
 	}
