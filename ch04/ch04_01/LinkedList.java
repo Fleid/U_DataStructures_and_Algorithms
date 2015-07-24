@@ -72,6 +72,20 @@ public class LinkedList
 		this.headNode = tempList.headNode;
 	}
 
+	//assignment 3
+	public int getDataFromEnd( int n )
+	{
+		int ln = this.length();
+		Node current = this.headNode;
+		
+		for (int i = 0 ; i < ln - n ; i++ )
+		{
+			current = current.getNextNode();
+		}
+		
+		return	current.getData();
+	}
+
 	public int length()
 	{
 		int length = 0;
