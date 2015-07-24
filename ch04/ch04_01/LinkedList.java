@@ -28,6 +28,36 @@ public class LinkedList
 		
 		return null;			
 	}
+	
+	// assignment 1
+	public void moveLastToHead( int n )
+	{
+		Node current = this.headNode;
+		Node last = this.headNode;
+		
+		//Maintaining the length as a member variable could help! (One less loop)
+		int ln = this.length();
+		
+		//La sortie du dernier devient le premier
+		for (int i = 0 ; i < ln - 1 ; i++ ) {
+			last = last.getNextNode();
+		}
+		last.setNextNode(this.headNode);
+		
+		//La head devient le Nième
+		for (int i = 0 ; i < ln - n ; i++ ) {
+			current = current.getNextNode();
+		}
+		this.headNode = current;
+		
+		//On ferme la sortie
+		for (int i = 0 ; i < ln - 1 ; i++ ) {
+			current = current.getNextNode();
+		}
+		current.setNextNode(null);
+		
+				
+	}
 
 	public int length()
 	{
