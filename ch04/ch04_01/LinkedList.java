@@ -120,6 +120,31 @@ public class LinkedList
 		this.headNode = tempList.headNode;
 	}
 
+
+	//assignment 5
+	/*
+	Implement an algorithm to delete a node from somewhere in the middle of a SINGLY linked list, given that you have access only to this node (and of course the subsequent nodes).
+	E.g.
+	INPUT: The node 'v' from the linked list u->v->w->x->y->z
+	RESULT: The new list should look like this u->w->x->y->z
+	
+	>> Since we cannot access the previous node, instead we can pull the data from the left (the nodes stay the same, its the data that changes place)
+	*/
+	
+	public void deleteNode(Node n) {
+		if (n != null && n.getNextNode() != null) {
+			n.setData(n.getNextNode().getData()); // copy the data over to n
+			n.setNextNode(n.getNextNode().getNextNode()); // next node of n is deleted now
+		}
+	}
+	
+	//assignment 6
+	/*
+	How can you identify if a Linked List is circular? (Think about using two pointers/references)
+	*/
+	
+	
+
 	public int length()
 	{
 		int length = 0;
