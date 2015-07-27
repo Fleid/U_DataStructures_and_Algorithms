@@ -143,6 +143,20 @@ public class LinkedList
 	How can you identify if a Linked List is circular? (Think about using two pointers/references)
 	*/
 	
+	public boolean isCircular() 
+	{
+		Node current = this.headNode;
+		Node ref = this.headNode;
+		
+		while (current != null)
+		{
+			current = current.getNextNode();
+			if (current == ref) return true;
+		}
+		
+		return false;
+		
+	}
 	
 
 	public int length()
